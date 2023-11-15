@@ -12,6 +12,10 @@ Install dependencies from **requirements.txt**:
 
 ## Commiting
 
+Use pipreqs to help commit dependencies:
+- `pip install pipreqs`
+- `pip install nbconvert`
+
 When **commiting**, update the requirements:
 `jupyter nbconvert --to script *.ipynb & pipreqs --force`
 
