@@ -16,10 +16,10 @@ Use pipreqs to help commit dependencies:
 - `pip install pipreqs`
 - `pip install nbconvert`
 
-When **commiting**, update the requirements:
-`jupyter nbconvert --to script *.ipynb & pipreqs --force`
+When **commiting**, update the requirements from your base folder:
+`jupyter nbconvert --to script *.ipynb & pipreqs . --force`
 
-**NB**: the above will generate a file *aml_ICS5110.py*, this is only needed for pipreqs to capture dependecies. Do not commit (its in the .ignore)
+**NB**: the above will generate a file **.py*, this is only needed for pipreqs to capture dependecies. Do not commit (all python files go to the .ignore)
 
 ## Datasets
 
