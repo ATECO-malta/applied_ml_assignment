@@ -2,6 +2,12 @@
 
 Applied ML Assignment collaboration guidelines. Notebook is here: [aml_ICS5110.ipynb](./aml_ICS5110.ipynb).
 
+## Project Structure
+
+- All papers, assignment latex, images, etc. should be stored in the ./misc directory.
+- Models should go to ./models, their training meta file to ./logs
+- Data should go to ./data or if unprocessed to ./raw_data
+
 ## Install Common Environment
 
 Create *python 3.10* env in conda:
@@ -54,6 +60,11 @@ for conda envs, use this:  `conda env export > environment.yml`
 Commit datasets as CSV if <10mb, else use LSF.
 
 All CVSs should go to the folder ['./raw_data'](./raw_data)
+
+# Exporting Notebooks
+
+Use: `jupyter nbconvert --to pdf *.ipynb`
+
 
 ## ENV configurations
 
